@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* 
+            1. 在手机端表现为蓝色
+            2. 在Pad端表现为绿色
+            3. 在PC端表现为红色
+        */
+
+        
+
+        /* 手机端: > 768 */
+        @media screen and (max-width:768px){  
+            body{
+                background-color: blue;
+            }
+        }
+
+        /* Pad端： <768  > 992 */
+        @media screen and (min-width:768px) and (max-width:992px){
+            body{
+                background-color: green;
+            }
+        }
+
+        /* PC端: < 992 */
+        @media screen and (min-width:992px) {
+            body{
+                background-color: red;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <p>内容</p>
+
+</body>
+</html>
